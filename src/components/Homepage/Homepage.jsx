@@ -1,6 +1,7 @@
 import Navbar from "../shared/Navbar";
 import Banner from "./Banner";
 import Banner2 from "./Banner2";
+import WorkDefinition from "./WordDefinitaion";
 
 
 const Homepage = () => {
@@ -8,7 +9,7 @@ const Homepage = () => {
         <div className="">
             <Banner></Banner>
             <Banner2></Banner2>
-            Homepage,,,,,,,,,,,,,,,,,,,,
+            <WorkDefinition></WorkDefinition>
             
         </div>
     );
