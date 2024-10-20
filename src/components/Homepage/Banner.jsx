@@ -3,7 +3,7 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className="bg-primary min-h-screen flex flex-col items-center justify-center text-white">
+    <div className="bg-primary min-h-screen flex flex-col items-center justify-center lg:pt-28 text-white">
       <div className="text-center">
         <div className="flex items-center justify-center space-x-2 mb-4">
           <span className="material-icons">trending_down</span>

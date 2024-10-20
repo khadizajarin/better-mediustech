@@ -3,59 +3,77 @@ import { MdLocalPhone } from "react-icons/md";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-primary text-secondary">
+        <div className="bg-primary">
+            <div className="navbar  text-secondary h-20 lg:max-w-7xl lg:mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </div>
+                    {/* nav icon for medium and small screen */}
+                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+
+                
+
+                {/*  medium and small screen nav options */}
                 <ul
                     tabIndex={0}
                     className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Item 1</a></li>
+                    <li><a>Buy</a></li>
                     <li>
-                    <a>Parent</a>
+                    <details>
+                    <summary>Refinance</summary>
                     <ul className="p-2">
                         <li><a>Submenu 1</a></li>
                         <li><a>Submenu 2</a></li>
                     </ul>
+                    </details>
                     </li>
-                    <li><a>Item 3</a></li>
+                    <li><a>HELOC</a></li>
+                    <li><a>Rates</a></li>
+                    <li><a>Better +</a></li>
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
-            </div>
-            <div className="navbar-center hidden lg:flex">
+                <a className="btn btn-ghost text-xl">Better</a>
+
+                    {/* large screen nav options */}
+                <div className=" hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
+                <li><a>Buy</a></li>
                 <li>
                     <details>
-                    <summary>Parent</summary>
+                    <summary>Refinance</summary>
                     <ul className="p-2">
                         <li><a>Submenu 1</a></li>
                         <li><a>Submenu 2</a></li>
                     </ul>
                     </details>
                 </li>
-                <li><a>Item 3</a></li>
+                <li><a>HELOC</a></li>
+                <li><a>Rates</a></li>
+                <li><a>Better +</a></li>
                 </ul>
+                </div>
             </div>
-            <div className="navbar-end">
-                <MdLocalPhone />
+            
+            <div className="navbar-end lg:mr-4 flex flex-row gap-8">
+                <MdLocalPhone className="border-2 border-secondary border-opacity-50 rounded-full w-12 h-12 p-3 hover:bg-secondary hover:text-primary" />
                 <a className="">Sign in</a>
             </div>
+
+            </div>
         </div>
+        
     );
 };
 
