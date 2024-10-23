@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    pageExtensions: ['js', 'jsx'],
     images: {
         remotePatterns: [
             {
@@ -12,7 +13,7 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'plus.unsplash.com'
+                hostname: 'via.placeholder.com'
             }
         ]
     }

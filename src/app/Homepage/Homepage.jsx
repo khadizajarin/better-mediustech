@@ -1,4 +1,4 @@
-import Navbar from "../shared/Navbar";
+import Navbar from "../../components/shared/Navbar";
 import Banner from "./Banner";
 import Banner2 from "./Banner2";
 import WorkDefinition from "./WordDefinitaion";
@@ -6,8 +6,8 @@ import WorkDefinition from "./WordDefinitaion";
 
 const Homepage = () => {
     return (
-        <div className="">
-            <Banner></Banner>
+        <div>
+            <Banner ></Banner>
             <Banner2></Banner2>
             <WorkDefinition></WorkDefinition>
             
